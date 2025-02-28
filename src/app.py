@@ -1,4 +1,3 @@
-from tkinter import ON
 from bson import ObjectId
 from flask import Flask, jsonify, request
 from flask_mysqldb import MySQL
@@ -21,7 +20,7 @@ db = MySQL(app)
 
 app.config["MONGO_URI"] =os.getenv("MONGO_URI")
 
-mongo = PyMongo(app)
+# mongo = PyMongo(app)
 
 #################################################################
 #CONSULTAS CON MYSQL
